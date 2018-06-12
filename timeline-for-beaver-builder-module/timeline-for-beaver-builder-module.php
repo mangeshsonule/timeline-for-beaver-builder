@@ -605,7 +605,7 @@ FLBuilder::register_module('BSFBBTimelines',
 						'timeline_dec_color'    => array(
 							'type'       => 'color',
 							'label'         => __( 'Text Color', 'bb-timeline' ),
-							'default'    => '000000',
+							'default'    => '#000000',
 							'show_reset' => true,
 							'preview'       => array(
 								'type' => 'css',
