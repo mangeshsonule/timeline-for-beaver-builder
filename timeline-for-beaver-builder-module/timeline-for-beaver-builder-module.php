@@ -524,7 +524,7 @@ FLBuilder::register_module('BSFBBTimelines',
 						'timeline_title_color'    => array(
 							'type'       => 'color',
 							'label'         => __( 'Text Color', 'bb-timeline' ),
-							'default'    => 'ffffff',
+							'default'    => '000000',
 							'show_reset' => true,
 							'preview'       => array(
 								'type' => 'css',
@@ -605,7 +605,7 @@ FLBuilder::register_module('BSFBBTimelines',
 						'timeline_dec_color'    => array(
 							'type'       => 'color',
 							'label'         => __( 'Text Color', 'bb-timeline' ),
-							'default'    => 'ffffff',
+							'default'    => '000000',
 							'show_reset' => true,
 							'preview'       => array(
 								'type' => 'css',
@@ -1147,6 +1147,11 @@ FLBuilder::register_settings_form('bb_timeline_form', array(
 							'label'         => __( 'Background Color', 'bb-timeline' ),
 							'default'    => '',
 							'show_reset' => true,
+							'preview'       => array(
+                            'type'          => 'css',
+                            'selector'      => '.bb-tmtimeline-container .bb-tmlabel',
+                            'property'      => 'background-color',
+                        	)
 						),
 
 						'sections_bg_color_opc' => array(
